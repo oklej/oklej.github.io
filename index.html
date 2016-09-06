@@ -145,6 +145,7 @@
                             <li><a href="#" data-filter=".mech-design">Mech design</a></li>
                             <li><a href="#" data-filter=".software">Software</a></li>
                             <li><a href="#" data-filter=".systemID">System analysis/System ID</a></li>
+                            <li><a href="#" data-filter=".algorithm">Algorithm</a></li>
                         </ul>
                     </div>
                     <!-- filters: App development, Algorithm? -->
@@ -159,7 +160,7 @@
                                     <img src="img/portfolio/ImpedanceAnalyzer/title.JPG" alt="" width="100%">
                                     <a class="overlay" data-toggle="modal" data-target="#project-1">
                                         <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
-                                        <span>System Identification</span>
+                                        <span>System analysis/System ID</span>
                                     </a>
                                 </div>
                                 <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-1">Impedance Analyzer</a>
@@ -168,17 +169,30 @@
                         </div>
 
 
+                        <div class="col-sm-6 col-md-3 isotope-item algorithm">
+                            <div class="image-box">
+                                <div class="overlay-container">
+                                    <img src="img/portfolio/DFAModulesLocalization/configuration1.JPG" alt="" width="100%">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-2">
+                                        <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
+                                        <span>Algorithm</span>
+                                    </a>
+                                </div>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Localization</a>
+                            </div>
+                        
+                        </div>
                         
                         <div class="col-sm-6 col-md-3 isotope-item software">
                             <div class="image-box">
                                 <div class="overlay-container">
                                     <img src="img/portfolio/roundicons.png" alt="" width="100%">
-                                    <a class="overlay" data-toggle="modal" data-target="#project-2">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-3">
                                         <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
                                         <span>App Development</span>
                                     </a>
                                 </div>
-                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-2">Project Title</a>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Project Title</a>
                             </div>
                         
                         </div>
@@ -242,7 +256,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="text-center">Copyright © 2016 by <a href="#biography">Jan Okle</a>.</p>
-                    <p class="text-center"> Based on the template <a href=http://htmlcoder.me/preview/worthy/v.1.0/> Worthy </a> by <a href=http://htmlcoder.me>HtmlCoder</a> and <a href=https://startbootstrap.com/template-overviews/agency/>Agency</a> by <a href=http://davidmiller.io/>D. Miller</a>  </p>
+                    <p class="text-center"> Based on the template <a href="http://htmlcoder.me/preview/worthy/v.1.0"> Worthy </a> by <a href="http://htmlcoder.me">HtmlCoder</a> and <a href="https://startbootstrap.com/template-overviews/agency">Agency</a> by <a href="http://davidmiller.io">D. Miller</a>  </p>
                 </div>
         
                 <div class="col-md-12">
@@ -306,12 +320,12 @@
                             <img src="img/portfolio/ImpedanceAnalyzer/Vin=8000mV,f=2000000_ShortEnd.pdf" alt="" width ="100%">
                             -->
                         </div>
-                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
                 </div>
+            </div>
         </div>
             
         
@@ -330,7 +344,57 @@
             <div class="container">
                 <div class="row">
                     <div class="modal-body">
-                        <h2 class="modal-title" id="project-2-label">Project Title</h2>
+                        <h2 class="modal-title" id="project-2-label">Localization</h2>
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p> Can a single module of a robot called Distributed Flight Array (DFA) be localized without the use of any distance sensors? This question was addressed in my Bachelor thesis.</p>
+                            <p>The <a href="http://www.idsc.ethz.ch/research-dandrea/research-projects/distributed-flight-array.html"> DFA </a> 
+                                is a distributed, modular platform developed at ETH Zurich to research distributed controls and estimation. It consists of hexagonal, identical (except for the propeller rotation direction) and fully autonomous modules, which cooperate to achieve the goal of a mission. Each module is equipped with three omni-directional wheels to move on the ground and a single propeller to lift itself. Magnets allow the modules
+                            to dock. When the modules are assembled, the DFA can take coordinated fight.
+                            <figure>
+                            <img src="img/portfolio/DFAModulesLocalization/DFA1.JPG" alt="DFA cluster and single module" width="100%">
+                            <figcaption>DFA cluster and a single module</figcaption>
+                            </figure>
+                            </p>
+                            <p>During the localization process proposed in this project, a cluster of connected DFA-modules rotates on the ground using omni-directional wheels and take advantage of their infrared communication devices to detect if another
+                            (single) module, the target module, is in line of sight. The rate gyroscope, each module is equipped with, provides the according rotation angle at perception. In this matter, a relation for the position of the target module with respect to the cluster of connected modules can be derived. Following video shows the procedure, where the communication rays are represented by lines that turn red when the target module is in line of sight.
+                            <!-- <img src="img/portfolio-1.jpg" alt=""> -->
+                            <video width="100%" height = auto controls>
+                                <source src="img/portfolio/DFAModulesLocalization/simulation.MP4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                                
+                            </p>
+                            <p> After a full rotation, multiple detections of the target modules have occured and the target position can be determined using least-squares. Simulating the localization repeatedly with noise of 5° standard deviation on the angle measurements results in a distribution of estimated module locations with a mean close to the actual mean.  
+                            <img src="img/portfolio/DFAModulesLocalization/PositionEstimationDistribution.JPG" alt="DFA cluster and single module" width="80%">
+                                </p>
+                            <p>
+                            Now, the DFA-cluster can use this information to cooperate with its newly detected peer, e.g. to assemble in a specific configuration to take off to new horizons.
+                            </p>                
+                           
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+                </div>
+        </div> 
+    </div>
+
+    <div class="portfolio-modal modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+        
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <h2 class="modal-title" id="project-3-label">Project Title</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
                             <p>Text.</p>
@@ -346,8 +410,8 @@
                     <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
                 </div>
         </div>
-        
-
+    </div>
+            
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
