@@ -172,7 +172,7 @@
                         <div class="col-sm-6 col-md-3 isotope-item algorithm">
                             <div class="image-box">
                                 <div class="overlay-container">
-                                    <img src="img/portfolio/DFAModulesLocalization/configuration1.JPG" alt="" width="100%">
+                                    <img src="img/portfolio/DFAModulesLocalization/configuration1_1.JPG" alt="" width="100%">
                                     <a class="overlay" data-toggle="modal" data-target="#project-2">
                                         <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
                                         <span>Algorithm</span>
@@ -304,8 +304,19 @@
                         <h2 class="modal-title" id="project-1-label">Impedance analyzer</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
-                            <p>Text.</p>
-                            <p>Text.</p>
+                            <p>What can you do with an arbitrary function generator and oscillosope? You can estimate the distance to a water leakage for example.
+                            <img src="img/portfolio/ImpedanceAnalyzer/SetupWithFncGenerator1.JPG" alt="Impedance analyzer setup" width="100%">
+                            </p>
+                            <p>
+                            In a project at Imperial College, I built a simple impedance analyzer to detect water ingress onto a sensor cable and to estimate the distance to the location of the leakage. 
+                            
+                            The water ingress was detected by measuring the impedance of the sensor cable. To calculate the impedance, the voltage across the cable and current have to be obtained. The current was estimated by measuring the voltage drop across a known resistance. Together with the total voltage drop, this is all we need. Since we know the input frequency, the voltages can be filtered well even under a large signal-to-noise ratio.
+                            <img src="img/portfolio/ImpedanceAnalyzer/fourierFilteredSignals1.jpg" alt="Fourier filtered signals" width="90%">
+                            </p>
+                            <p> Secondly, the location of the leakage can be calculated by transmitting a pulse. The pulse propagates as an alectromagnetic wave through the cable until it reaches the end of the cable, where it is reflected. Furthermore, the pulse is also reflected at the location of water ingress. Knowing the length of the cable, the location of water ingress could be determined up to 3m accuracy (limited by the maximal sampling frequency). 
+                            <img src="img/portfolio/ImpedanceAnalyzer/pulsePropagation1.jpg" alt="Pulse propagation and reflection" width="100%">
+                            </p>                          
+                            
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
                             <!--
