@@ -157,7 +157,7 @@
                         <div class="col-sm-6 col-md-3 isotope-item systemID">
                             <div class="image-box">
                                 <div class="overlay-container">
-                                    <img src="img/portfolio/ImpedanceAnalyzer/title.JPG" alt="" width="100%">
+                                    <img src="img/portfolio/ImpedanceAnalyzer/titleImpedanceAnalyzer.JPG" alt="" width="100%">
                                     <a class="overlay" data-toggle="modal" data-target="#project-1">
                                         <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
                                         <span>System analysis/System ID</span>
@@ -183,12 +183,27 @@
                         
                         </div>
                         
+                        <div class="col-sm-6 col-md-3 isotope-item mech-design">
+                            <div class="image-box">
+                                <div class="overlay-container">
+                                    <img src="img/portfolio/yoyo/titleYoyo.PNG" alt="" width="100%">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-3">
+                                        <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
+                                        <span>Mech Design</span>
+                                    </a>
+                                </div>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Yoyo design &amp; Manufacturing</a>
+                            </div>
+                        
+                        </div>
+                        
+                        <!--
                         <div class="col-sm-6 col-md-3 isotope-item software">
                             <div class="image-box">
                                 <div class="overlay-container">
                                     <img src="img/portfolio/roundicons.png" alt="" width="100%">
                                     <a class="overlay" data-toggle="modal" data-target="#project-3">
-                                        <i class="fa"></i> <!-- <i class="fa fa-search-plus"></i> -->
+                                        <i class="fa"></i> 
                                         <span>App Development</span>
                                     </a>
                                 </div>
@@ -196,6 +211,7 @@
                             </div>
                         
                         </div>
+                        -->
 
                     </div>
                     <!-- portfolio items end -->
@@ -311,25 +327,12 @@
                             In a project at Imperial College, I built a simple impedance analyzer to detect water ingress onto a sensor cable and to estimate the distance to the location of the leakage. 
                             
                             The water ingress was detected by measuring the impedance of the sensor cable. To calculate the impedance, the voltage across the cable and current have to be obtained. The current was estimated by measuring the voltage drop across a known resistance. Together with the total voltage drop, this is all we need. Since we know the input frequency, the voltages can be filtered well even under a large signal-to-noise ratio.
-                            <img src="img/portfolio/ImpedanceAnalyzer/fourierFilteredSignals1.jpg" alt="Fourier filtered signals" width="90%">
+                            <img src="img/portfolio/ImpedanceAnalyzer/fourierFilteredSignals1.JPG" alt="Fourier filtered signals" width="90%">
                             </p>
                             <p> Secondly, the location of the leakage can be calculated by transmitting a pulse. The pulse propagates as an alectromagnetic wave through the cable until it reaches the end of the cable, where it is reflected. Furthermore, the pulse is also reflected at the location of water ingress. Knowing the length of the cable, the location of water ingress could be determined up to 3m accuracy (limited by the maximal sampling frequency). 
-                            <img src="img/portfolio/ImpedanceAnalyzer/pulsePropagation1.jpg" alt="Pulse propagation and reflection" width="100%">
+                            <img src="img/portfolio/ImpedanceAnalyzer/pulsePropagation1.JPG" alt="Pulse propagation and reflection" width="100%">
                             </p>                          
                             
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <!--
-                            <img src="img/portfolio/ImpedanceAnalyzer/DSC03672.JPG" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/DSC03673.JPG" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/DSC03677.JPG" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/Filtering.JPG" alt="" width ="100%">     
-                            <img src="img/portfolio/ImpedanceAnalyzer/Measurement of a resistance (1MOhm).JPG" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/Vin=12000mV,f=1000000_OpenEnd.pdf" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/Vin=12000mV,f=1000000_ShortEnd.pdf" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/Vin=8000mV,f=2000000_OpenEnd.pdf" alt="" width ="100%">
-                            <img src="img/portfolio/ImpedanceAnalyzer/Vin=8000mV,f=2000000_ShortEnd.pdf" alt="" width ="100%">
-                            -->
                         </div>
                     </div>
                 </div>
@@ -405,6 +408,38 @@
             <div class="container">
                 <div class="row">
                     <div class="modal-body">
+                        <h2 class="modal-title" id="project-3-label">Design and Manufacturing of a Yoyo</h2>
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>As a part of a class, we designed a yoyo in a group of seven people and ran a small series production (50 yoyos). To succeed, it was not enough to only consider the design aspect but one had to keep also manufacturing in mind. From design of the yoyo itself and the mold design, over milling and injection molding, to assembly and quality control - all stages of a production were a part of this project. Check out the video below for more.
+                            <video width="100%" height = auto controls>
+                                <source src="img/portfolio/yoyo/Skyline%20Yoyo.MP4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="portfolio-modal modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+        
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
                         <h2 class="modal-title" id="project-3-label">Project Title</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
@@ -412,7 +447,7 @@
                             <p>Text.</p>
                         </div>
                         <div class="col-lg-8 col-lg-offset-2">
-                            <!-- <img src="img/portfolio-1.jpg" alt=""> -->
+                             <img src="img/portfolio-1.jpg" alt=""> 
                         </div>
                         </div>
                     </div>
@@ -422,7 +457,7 @@
                 </div>
         </div>
     </div>
-            
+    -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
