@@ -1159,16 +1159,16 @@ body {
 @media(min-width:768px) {
     .site-name.navbar-full{
         color: #222;     
-        font-size: 40px;
+        font-size: 30px;
         margin: 0px 0px 0px 20px;
     }
     .site-slogan.navbar-full{
         color: #222;        
-        font-size: 14px;
+        font-size: 12px;
         margin: 0px 0px 0px 20px;
     }
     .logo.navbar-full{
-        width: 55%;
-        margin: 0px 0px 0px -30px;
+        width: 50%;
+        margin: 0px 0px 0px -25px;
     }
 }
