@@ -207,6 +207,20 @@
                         
                         </div>
                         
+                        <div class="col-sm-6 col-md-3 isotope-item algorithm">
+                            <div class="image-box">
+                                <div class="overlay-container">
+                                    <img src="img/portfolio/goalieRobot/titleGoalieRobot.PNG" alt="" width="100%">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-4">
+                                        <i class="fa"></i> 
+                                        <span>Algorithm</span>
+                                    </a>
+                                </div>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-4">Goalie robot</a>
+                            </div>
+                        
+                        </div>
+                        
                         <!--
                         <div class="col-sm-6 col-md-3 isotope-item software">
                             <div class="image-box">
@@ -384,7 +398,7 @@
                             (single) module, the target module, is in line of sight. The rate gyroscope, each module is equipped with, provides the according rotation angle at perception. In this matter, a relation for the position of the target module with respect to the cluster of connected modules can be derived. Following video shows the procedure, where the communication rays are represented by lines that turn red when the target module is in line of sight.
                             <!-- <img src="img/portfolio-1.jpg" alt=""> -->
                             <video width="100%" height = auto controls>
-                                <source src="img/portfolio/DFAModulesLocalization/simulation.MP4" type="video/mp4">
+                                <source src="img/portfolio/DFAModulesLocalization/simulation_web.MP4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                                 
@@ -423,7 +437,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <p>As a part of a class, we designed a yoyo in a group of seven people and ran a small series production (50 yoyos). To succeed, it was not enough to only consider the design aspect but one had to keep also manufacturing in mind. From design of the yoyo itself and the mold design, over milling and injection molding, to assembly and quality control - all stages of a production were a part of this project. Check out the video below for more.
                             <video width="100%" height = auto controls>
-                                <source src="img/portfolio/yoyo/Skyline%20Yoyo.MP4" type="video/mp4">
+                                <source src="img/portfolio/yoyo/SkylineYoyo_web.MP4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             
@@ -437,6 +451,47 @@
             </div>
         </div>
     </div>
+     <div class="portfolio-modal modal fade" id="project-4" tabindex="-1" role="dialog" aria-labelledby="project-4-label" aria-hidden="true">
+        
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <h2 class="modal-title" id="project-4-label">Goalie robot</h2>
+
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>In the last month of a robotics class, the students were split up into striker and goalie teams with the task to build a soccer robot of this kind. On the competition day in the end of the semester, the striker teams competed against the goalie teams. As in regular soccer, the striker tried to score as many goals as possible while the goalie aimed to block all incoming balls. 
+                            </p>
+                            <p>
+                            I was assigned to a goalie team. Together with seven other students, we started building a goalie robot. The only restriction was to block the ball only with the provided hand and no other part of the robot. Our design can be checked out in the following video as presented on the competition day before competing in the tournament.
+                            <video width="100%" height = auto controls>
+                                <source src="img/portfolio/goalieRobot/VideoRobot_final_web.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            </p>
+                            <p>
+                            In order for the robot to block the ball, two main parts are required: Firstly, the spot has to be predicted, where the incoming ball ends up on the goal plane (estimation). Secondly, the robot has to move there in time (control). The spot on the goal plane was predicted by forward propagating the dynamics of the ball with the current state as initialization. The current state itself was estimated using a Kalman filter with the vision data from cameras as measurement updates. Thus, the location can be predicted as a probability distribution and the control aggressivity could be adapted according to the size of the uncertainty. A simulation example can be seen below. Due to time constraints, however, the control was simplified to move to the mean of the distribution independent of the standard deviation.
+                            <video width="100%" height = auto controls>
+                                <source src="img/portfolio/goalieRobot/KF_simulation101.MP4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
     <!--
     <div class="portfolio-modal modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
         
@@ -459,12 +514,12 @@
                         <div class="col-lg-8 col-lg-offset-2">
                              <img src="img/portfolio-1.jpg" alt=""> 
                         </div>
-                        </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
     -->
