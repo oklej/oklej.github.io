@@ -361,16 +361,18 @@
                         <h2 class="modal-title" id="project-1-label">Impedance analyzer</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
-                            <p>What can you do with an arbitrary function generator and oscillosope? You can estimate the distance to a water leakage for example.
+                            <p>What can you do with an arbitrary function generator and oscillosope? You can estimate the distance to a water leakage for example.<br>
                             <img src="img/portfolio/ImpedanceAnalyzer/SetupWithFncGenerator1.JPG" alt="Impedance analyzer setup" width="100%">
                             </p>
                             <p>
                             In a project at Imperial College, I built a simple impedance analyzer to detect water ingress onto a sensor cable and to estimate the distance to the location of the leakage. 
                             
                             The water ingress was detected by measuring the impedance of the sensor cable as the ratio between the voltage across the cable and the current. The current was estimated by measuring the voltage drop across a known resistance. Together with the total voltage drop, this is all we need. Since we know the input frequency, the voltages can be filtered well even under a large signal-to-noise ratio.
+                            <figure>
                             <img src="img/portfolio/ImpedanceAnalyzer/fourierFilteredSignals1.jpg" alt="Fourier filtered signals" width="90%">
+                            </figure>
                             </p>
-                            <p> Secondly, the location of the leakage can be calculated by transmitting a pulse. The pulse propagates as an electromagnetic wave through the cable until it reaches the end of the cable, where it is reflected. Furthermore, the pulse is also reflected at the location of water ingress. Knowing the length of the cable, the location of water ingress could be determined up to 3m accuracy (limited by the maximal sampling frequency). 
+                            <p> Secondly, the location of the leakage can be calculated by transmitting a pulse. The pulse propagates as an electromagnetic wave through the cable until it reaches the end of the cable, where it is reflected. Furthermore, the pulse is also reflected at the location of water ingress. Knowing the length of the cable, the location of water ingress could be determined up to 3m accuracy (limited by the maximal sampling frequency). <br>
                             <img src="img/portfolio/ImpedanceAnalyzer/pulsePropagation1.jpg" alt="Pulse propagation and reflection" width="100%">
                             </p>                          
                             
@@ -412,7 +414,7 @@
                             </figure>
                             </p>
                             <p>During the localization process proposed in this project, a cluster of connected DFA-modules rotates on the ground using omni-directional wheels and take advantage of their infrared communication devices to detect if another
-                            (single) module, the target module, is in line of sight. The rate gyroscope, each module is equipped with, provides the according rotation angle at perception. In this matter, a relation for the position of the target module with respect to the cluster of connected modules can be derived. Following video shows the procedure, where the communication rays are represented by lines that turn red when the target module is in line of sight.
+                            (single) module, the target module, is in line of sight. The rate gyroscope, each module is equipped with, provides the according rotation angle at perception. In this matter, a relation for the position of the target module with respect to the cluster of connected modules can be derived. Following video shows the procedure, where the communication rays are represented by lines that turn red when the target module is in line of sight.<br>
                             <!-- <img src="img/portfolio-1.jpg" alt=""> -->
                             <video width="100%" height = auto preload="none" poster="img/portfolio/DFAModulesLocalization/simulationPoster.jpg" controls>
                                 <source src="img/portfolio/DFAModulesLocalization/simulation_web.mp4" type="video/mp4">
@@ -420,9 +422,9 @@
                             </video>
                                 
                             </p>
-                            <p> After a full rotation, multiple detections of the target modules have occured and the target position can be determined using least-squares. Simulating the localization repeatedly with noise of 5° standard deviation on the angle measurements results in a distribution of estimated module locations with a mean close to the actual mean. 
+                            <p> After a full rotation, multiple detections of the target modules have occured and the target position can be determined using least-squares. Simulating the localization repeatedly with noise of 5° standard deviation on the angle measurements results in a distribution of estimated module locations with a mean close to the actual mean.
                             <figure>
-                            <img src="img/portfolio/DFAModulesLocalization/PositionEstimationDistribution.jpg" alt="DFA cluster and single module" width="80%">
+                            <img src="img/portfolio/DFAModulesLocalization/PositionEstimationDistribution.jpg"> 
                             </figure>
                             </p>
                             <p>

@@ -1179,3 +1179,7 @@ body {
         margin: 0px 0px 0px 5px
     }
 }
+
+.portfolio-modal .modal-content p{
+    text-align:justify;
+}
