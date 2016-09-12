@@ -273,7 +273,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/DSC03845.JPG);
+    background-image: url(../img/header.JPG);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -1170,5 +1170,12 @@ body {
     .logo.navbar-full{
         width: 50%;
         margin: 0px 0px 0px -25px;
+    }
+}
+
+@media(max-width:400px){
+    .logo{
+        width: 0%;
+        margin: 0px 0px 0px 5px
     }
 }
