@@ -414,7 +414,7 @@
                             <p>During the localization process proposed in this project, a cluster of connected DFA-modules rotates on the ground using omni-directional wheels and take advantage of their infrared communication devices to detect if another
                             (single) module, the target module, is in line of sight. The rate gyroscope, each module is equipped with, provides the according rotation angle at perception. In this matter, a relation for the position of the target module with respect to the cluster of connected modules can be derived. Following video shows the procedure, where the communication rays are represented by lines that turn red when the target module is in line of sight.
                             <!-- <img src="img/portfolio-1.jpg" alt=""> -->
-                            <video width="100%" height = auto controls>
+                            <video width="100%" height = auto preload="none" poster="img/portfolio/DFAModulesLocalization/simulationPoster.jpg" controls>
                                 <source src="img/portfolio/DFAModulesLocalization/simulation_web.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -454,8 +454,8 @@
                         <h2 class="modal-title" id="project-3-label">Design and Manufacturing of a Yoyo</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
-                            <p>As a part of a class, we designed a yoyo in a group of seven people and ran a small series production (50 yoyos). To succeed, it was not enough to only consider the design aspect but one had to keep also manufacturing in mind. From design of the yoyo itself and the mold design, over milling and injection molding, to assembly and quality control - all stages of a production were a part of this project. Check out the video below for more.
-                            <video width="100%" height = auto controls>
+                            <p>As a part of a class, we designed a yoyo in a group of seven people and ran a small series production (50 yoyos). To succeed, it was not enough to only consider the design aspect but one had to keep also manufacturing in mind. From design of the yoyo itself and the mold design, over milling and injection molding, to assembly and quality control - all stages of a production were a part of this project. Check out the video below for more.<br>
+                            <video width="100%" height = auto preload="none" poster="img/portfolio/yoyo/SkylineYoyoPoster.jpg" controls>
                                 <source src="img/portfolio/yoyo/SkylineYoyo_web.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
@@ -488,15 +488,15 @@
                             <p>In the last month of a robotics class, the students were split up into striker and goalie teams with the task to build a soccer robot of this kind. On the competition day in the end of the semester, the striker teams competed against the goalie teams. As in regular soccer, the striker tried to score as many goals as possible while the goalie aimed to block all incoming balls. 
                             </p>
                             <p>
-                            I was assigned to a goalie team. Together with seven other students, we started building a goalie robot. The only restriction was to block the ball only with the provided hand and no other part of the robot. Our design can be checked out in the following video as presented on the competition day before competing in the tournament.
-                            <video width="100%" height = auto controls>
+                            I was assigned to a goalie team. Together with seven other students, we started building a goalie robot. The only restriction was to block the ball only with the provided hand and no other part of the robot. Our design can be checked out in the following video as presented on the competition day before competing in the tournament.<br>
+                            <video width="100%" height = auto preload="none" poster="img/portfolio/goalieRobot/VideoRobotPoster.jpg" controls>
                                 <source src="img/portfolio/goalieRobot/VideoRobot_final_web.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                             </p>
                             <p>
-                            In order for the robot to block the ball, two main parts are required: Firstly, the spot has to be predicted, where the incoming ball ends up on the goal plane (estimation). Secondly, the robot has to move there in time (control). The spot on the goal plane was predicted by forward propagating the dynamics of the ball with the current state as initialization. The current state itself was estimated using a Kalman filter with the vision data from cameras as measurement updates. Thus, the location can be predicted as a probability distribution and the control aggressivity could be adapted according to the size of the uncertainty. A simulation example can be seen below. Due to time constraints, however, the control was simplified to move to the mean of the distribution independent of the standard deviation.
-                            <video width="100%" height = auto controls>
+                            In order for the robot to block the ball, two main parts are required: Firstly, the spot has to be predicted, where the incoming ball ends up on the goal plane (estimation). Secondly, the robot has to move there in time (control). The spot on the goal plane was predicted by forward propagating the dynamics of the ball with the current state as initialization. The current state itself was estimated using a Kalman filter with the vision data from cameras as measurement updates. Thus, the location can be predicted as a probability distribution and the control aggressivity could be adapted according to the size of the uncertainty. A simulation example can be seen below. Due to time constraints, however, the control was simplified to move to the mean of the distribution independent of the standard deviation.<br>
+                            <video width="100%" height = auto preload="none" poster="img/portfolio/goalieRobot/KF_simulationPoster.jpg" controls>
                                 <source src="img/portfolio/goalieRobot/KF_simulation101.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
