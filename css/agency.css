@@ -1176,10 +1176,16 @@ body {
 @media(max-width:400px){
     .logo{
         width: 0%;
-        margin: 0px 0px 0px 5px
+        margin: 0px 0px 0px 5px;
     }
 }
 
 .portfolio-modal .modal-content p{
     text-align:justify;
+}
+
+@media(max-width:768px) {
+    .responsiveImgPercentageWidth{
+        width: 100%;
+    }
 }

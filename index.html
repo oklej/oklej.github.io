@@ -238,6 +238,21 @@
                         
                         </div>
                         
+                        <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 isotope-item software">
+                            <div class="image-box">
+                                <div class="overlay-container">
+                                    <img src="img/portfolio/ControllerCertification/titleControllerCertification.png" alt="" width="100%">
+                                    <a class="overlay" data-toggle="modal" data-target="#project-6">
+                                        <i class="fa fa-search-plus"></i> 
+                                        <span>Algorithm</span>
+                                    </a>
+                                </div>
+                                <a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-6">Controller Certification</a>
+                            </div>
+                        
+                        </div>
+                        
+                        
                         <!--
                         <div class="col-sm-6 col-md-3 isotope-item software">
                             <div class="image-box">
@@ -424,7 +439,7 @@
                             </p>
                             <p> After a full rotation, multiple detections of the target modules have occured and the target position can be determined using least-squares. Simulating the localization repeatedly with noise of 5° standard deviation on the angle measurements results in a distribution of estimated module locations with a mean close to the actual mean.
                             <figure>
-                            <img src="img/portfolio/DFAModulesLocalization/PositionEstimationDistribution.jpg"> 
+                            <img src="img/portfolio/DFAModulesLocalization/PositionEstimationDistribution.jpg" width="90%"> 
                             </figure>
                             </p>
                             <p>
@@ -525,13 +540,47 @@
             <div class="container">
                 <div class="row">
                     <div class="modal-body">
-                        <h2 class="modal-title" id="project-3-label">Github project website</h2>
+                        <h2 class="modal-title" id="project-5-label">Github project website</h2>
 
                         <div class="col-lg-8 col-lg-offset-2">
                             <p>To learn more about website development with responsive design, I decided to build this very project website that you are on right now.  Hope you enjoy it! It was built based on <a href="http://getbootstrap.com/">Bootstrap</a> templates, which were adapted to my needs using the code editor <a href="http://brackets.io/">Brackets</a>. The project served for me as an introduction to programming in html5, css3 and javascript.           
                             <figure>
                             <img src="img/portfolio/WebDevelopment/titleWebDevelopment_full.PNG" alt="HTML code" width="80%">
                             </figure>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="portfolio-modal modal fade" id="project-6" tabindex="-1" role="dialog" aria-labelledby="project-6-label" aria-hidden="true">
+        
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <h2 class="modal-title" id="project-6-label">Certification of controllers for wearable robots</h2>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>A crucial goal of control is the stability of a closed-loop system. This is important to even a greater extent for wearable robots, where the guarantee of stability under all conditions that can occur is a must. It is not enough though to guarantee stability for nominal parameters in simulation. The system must also be stable on the hardware under load changes and varying parameters. Robustness is not only a topic for wearable robots but also appears in other applications. In legged robots for example, stability has to be ensured for large varying masses experienced by the controller. All in all, the guarantee of stability is a widespread problem in robotics.
+                            <figure>
+                            <img src="img/portfolio/ControllerCertification/feedbackStructure.png" width="60%" alt="Control structure" align="middle" class="responsiveImgPercentageWidth"> 
+                                <figcaption>Feedback structure</figcaption>
+                            </figure>
+                            </p>
+                            <p> A method to quantify stability of a closed-loop system and differences in stability for plants is given by the &nu;-gap metric and the generalized stability margin. Based on them, my master thesis established a framework for studying the closed-loop stability of perturbed systems and for designing controllers that achieve a stable closed-loop system even for varied plants. As part of the latter, it proposed an iterative certification procedure to design such controllers. The method separates the controller design from the robustness question.
+                            </p>
+                            <p>A webpage with the full <a href="http://www.adrl.ethz.ch/doku.php/adrl:education:completed_projects:okle2016">project description</a> can be found on the website of the Agile &amp; Dexterous Robotics Lab (ADRL).  
                             </p>
                         </div>
                     </div>
