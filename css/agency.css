@@ -896,8 +896,8 @@ body {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills > li > a:hover {
-	background-color: #55acee;
-	border-color: #55acee;
+	background-color: #339beb;
+	border-color: #339beb;
 	color: #ffffff;
 }
 .nav-pills > li > a {
@@ -908,11 +908,13 @@ body {
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 300;
+    background-color: #fff
 }
 
-
 .bg-image-1 {
-	background: url("../img/DSC_0081.JPG") 50% 0px no-repeat;
+	background: url("../img/portfolioBackground.JPG") 50% 50% no-repeat;
+    background-size: cover
+    
 }
 /* Isotope Items
 ---------------------------------- */
@@ -1103,7 +1105,12 @@ body {
 	background-color: #339BEB;
 	border-color: #339BEB;
 }
-
+.isotope-container .btn{
+    min-width: 0px;
+    overflow: hidden;
+    white-space: normal;
+    padding: 8px 8px
+}
 /* Fixed Header
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
