@@ -1250,6 +1250,46 @@ body {
     .col-xxs-1 {
       width: 8.33333333%;
     }
+    .col-xxs-offset-12 {
+      margin-left: 100%;
+    }
+    .col-xxs-offset-11 {
+      margin-left: 91.66666667%;
+    }
+    .col-xxs-offset-10 {
+      margin-left: 83.33333333%;
+    }
+    .col-xxs-offset-9 {
+      margin-left: 75%;
+    }
+    .col-xxs-offset-8 {
+      margin-left: 66.66666667%;
+    }
+    .col-xxs-offset-7 {
+      margin-left: 58.33333333%;
+    }
+    .col-xxs-offset-6 {
+      margin-left: 50%;
+    }
+    .col-xxs-offset-5 {
+      margin-left: 41.66666667%;
+    }
+    .col-xxs-offset-4 {
+      margin-left: 33.33333333%;
+    }
+    .col-xxs-offset-3 {
+      margin-left: 25%;
+    }
+    .col-xxs-offset-2 {
+      margin-left: 16.66666667%;
+    }
+    .col-xxs-offset-1 {
+      margin-left: 8.33333333%;
+    }
+    .col-xxs-offset-0 {
+      margin-left: 0;
+    }
+    
 }
 
 .rotate180{ 
