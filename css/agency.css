@@ -1297,3 +1297,18 @@ body {
 -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */ 
 transform: rotate(180deg); 
 }
+
+.modal-footer .projectDate{
+    text-align: left;
+}
+@media(min-width: 420px){
+    .modal-footer .projectDate{
+        padding: 8px;
+    }
+}
+@media(min-width: 1200px){
+    .modal-footer .projectDate{
+        text-align: right;
+        padding: 0px 0px 10px 0px;
+    }
+}
